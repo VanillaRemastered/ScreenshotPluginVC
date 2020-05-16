@@ -81,7 +81,7 @@ public:
 
 				take_screenshot(screenshot_store_bufer);
 
-				CHud::SetHelpMessage("ss taken", true, false);
+				CHud::SetHelpMessage("Screenshot taken", true, false);
 
 			}
 		};
