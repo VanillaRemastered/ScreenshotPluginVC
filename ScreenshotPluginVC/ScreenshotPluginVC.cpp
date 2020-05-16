@@ -61,9 +61,8 @@ void take_screenshot(char* BmpName)
 class VCScreenshotPlugin {
 public:
 	VCScreenshotPlugin() {
-		Error("beep boooopy");
 		Events::gameProcessEvent += [] {
-			if (KeyPressed('K')) { // f8
+			if (KeyPressed(0x77)) { // f8
 				CHAR usr_doucment_path[MAX_PATH]{};
 
 				HRESULT doucmentsResult = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, usr_doucment_path);
